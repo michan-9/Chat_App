@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/png" />
+
+    <title>Chat APP</title>
+  </head>
+  <body class="container">
+    <div class="card">
+      <div class="card__user">
+        <svg class="card__icon">
+          <use href="img/sprite.svg#icon-arrow-left"></use>
+        </svg>
+        <div class="card__user-photo">
+          <img src="img/avatar.jpg" alt="Avatar User" class="card__user-img" />
+        </div>
+        <div class="card__details">
+          <p class="card__name">Samuel Green</p>
+          <span class="card__available">Available to Walk</span>
+        </div>
+        <svg class="card__icon">
+          <use href="img/sprite.svg#icon-dots-three-vertical"></use>
+        </svg>
+      </div>
+      <div class="card__content">
+        <div class="card__msg card__msg--left anileft--1">
+          <p>That sounds great. I’d be happy with that.</p>
+        </div>
+        <div class="card__msg card__msg--left anileft--2">
+          <p>Could you send over some pictures of your dog, please?</p>
+        </div>
+        <div class="card__pet-photos aniright--1">
+          <img
+            src="img/dog-image-1.jpg"
+            alt="Pet photo one"
+            class="card__pet-img"
+          /><img
+            src="img/dog-image-2.jpg"
+            alt="Pet Photo two"
+            class="card__pet-img"
+          /><img
+            src="img/dog-image-3.jpg"
+            alt="Pet Photo three"
+            class="card__pet-img"
+          />
+        </div>
+
+        <div class="card__msg card__msg--right aniright--2">
+          <p>Here are a few pictures. She’s a happy girl!</p>
+        </div>
+
+        <div class="card__msg card__msg--right card__msg--width aniright--3">
+          <p>Can you make it?</p>
+        </div>
+
+        <div class="card__msg card__msg--left anileft--3">
+          <p>
+            She looks so happy! The time we discussed works. How long shall I
+            take her out for?
+          </p>
+        </div>
+
+        <label for="ckbx" class="card__checkout anicenter--1">
+          <input type="radio" name="radio" id="ckbx" class="card__checkbox" />
+          <span class="card__checkbox-hk"></span>
+          <span class="card__option">30 minute walk</span>
+          <span class="card__price">$29</span>
+        </label>
+        <label for="ckbx2" class="card__checkout anicenter--2">
+          <input type="radio" name="radio" id="ckbx2" class="card__checkbox" />
+          <span class="card__checkbox-hk"></span>
+          <span class="card__option">1 hour walk</span>
+          <span class="card__price">$49</span>
+        </label>
+
+        <div class="card__input-box">
+          <input
+            type="text"
+            name="msg"
+            id="msg"
+            class="card__input"
+            placeholder="Type a message..."
+          />
+          <input type="submit" value=">" class="card__button" />
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <h1 class="info__title">Simple booking</h1>
+      <p class="info__paragraph">
+        Stay in touch with our dog walkers through the chat interface. This
+        makes it easy to discuss arrangements and make bookings. Once the walk
+        has been completed you can rate your walker and book again all through
+        the chat.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+@keyframes inleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes inright {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.anileft {
+  &--1 {
+    animation: inleft 1s;
+  }
+
+  &--2 {
+    animation: inleft 1s 1s;
+  }
+
+  &--3 {
+    animation: inleft 1s 5s;
+  }
+}
+
+.aniright {
+  &--1 {
+    animation: inright 1s 2s;
+  }
+
+  &--2 {
+    animation: inright 1s 3s;
+  }
+
+  &--3 {
+    animation: inright 1s 4s;
+  }
+}
+
+.anicenter {
+  &--1 {
+    animation: inleft 2s 6s;
+  }
+
+  &--2 {
+    animation: inright 2s 6s;
+  }
+}

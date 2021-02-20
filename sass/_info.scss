@@ -1,0 +1,33 @@
+.info {
+  flex: 0 0 31%;
+  margin-left: 7rem;
+
+  @media only screen and (max-width: $bp-phone) {
+    margin-left: 0;
+    padding: 3rem;
+    margin-top: 5rem;
+  }
+
+  &__title {
+    font-size: 5rem;
+    line-height: 5rem;
+    color: var(--h1);
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: $bp-phone) {
+      font-size: 4rem;
+      line-height: 4rem;
+      text-align: center;
+    }
+  }
+
+  &__paragraph {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--paragraph);
+
+    @media only screen and (max-width: $bp-phone) {
+      text-align: center;
+    }
+  }
+}
